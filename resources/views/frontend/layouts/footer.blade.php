@@ -16,7 +16,7 @@
 							@php
 								$settings=DB::table('settings')->get();
 							@endphp
-							<p class="text">@foreach($settings as $data) {{$data->short_des}} @endforeach</p>
+							<p class="text">@foreach($settings as $data) {!!$data->short_des!!} @endforeach</p>
 							<p class="call">Got Question? Call us 24/7<span><a href="tel:8076122150">@foreach($settings as $data) {{$data->phone}} @endforeach</a></span></p>
 						</div>
 						<!-- End Single Widget -->
@@ -76,7 +76,7 @@
 					<div class="row">
 						<div class=" col-12 d-flex justify-content-center">
 							<div class="">
-								<p>Copyright © {{date('Y')}} <a href="https://github.com/Kritika80517" target="_blank">Fashion Store</a>  -  All Rights Reserved.</p>
+								<p>Copyright © {{date('Y')}} <a href="https://fashion-store.thestudykitt.in" target="_blank">Fashion Store</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<!-- <div class="col-lg-6 col-12">
