@@ -47,11 +47,11 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-12">
                     <!-- Logo -->
-                    <div class="logo">
+                    <div class="logo m-0">
                         @php
                             $settings=DB::table('settings')->get();
-                        @endphp                    
-                        <a href="{{route('home')}}"><img src="{{asset('frontend/img/logo2.png')}}" alt="logo" width="80px" height="80px"></a>
+                        @endphp   
+                        <a href="{{route('home')}}"><img src="{{asset('backend/img/logo4.png')}}" alt="logo" width="80px" height="80px"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
